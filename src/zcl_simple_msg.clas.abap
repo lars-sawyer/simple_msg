@@ -68,6 +68,7 @@ class zcl_simple_msg definition
       exporting
         es_out type any.
 
+private section.
 ENDCLASS.
 
 
@@ -97,6 +98,10 @@ CLASS ZCL_SIMPLE_MSG IMPLEMENTATION.
       importing
         result = result-t_msg
     ).
+
+
+
+  "test
 
     if result-t_msg is initial.
       return.
